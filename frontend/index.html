@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>碳循景 · 建筑固废循环利用数字化平台</title>
+<meta name="description" content="从建筑固废到再生材料，从废弃物到低碳产品 — 让每一次循环利用都被记录、量化与看见。" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#F6F4EC', ink: '#222a14', graphite: '#3a3d38', accent: '#B7FF3D',
+        },
+        fontFamily: {
+          display: ["'Noto Serif SC'", 'serif'],
+          sans: ["'Noto Sans SC'", 'sans-serif'],
+          mono: ["'JetBrains Mono'", 'monospace'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="style.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<!-- Agent 助手页面：报告以 Markdown 形式返回，用 marked 渲染 + DOMPurify 清洗 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/13.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+</head>
+<body>
+<div id="root">
+  <div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#6B716C;">
+    正在加载碳循景平台…
+  </div>
+</div>
+<script type="text/babel" data-presets="react" src="app.js"></script>
+</body>
+</html>
